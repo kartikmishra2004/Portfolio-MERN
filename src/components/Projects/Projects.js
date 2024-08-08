@@ -25,7 +25,7 @@ function Projects() {
               isBlog={false}
               title="NimbusBook"
               description="NimbusBook is a cloud-based notes application built with the MERN stack. It features user authentication, allowing users to securely manage their notes. Users can create, update, and delete notes with ease. The focus is on providing a clean, user-friendly interface to enhance the note-taking experience."
-              ghLink="https://github.com/kartikmishra2004/NimbusBook-Frontend"
+              ghLink="https://github.com/kartikmishra2004/NimbusBook"
               demoLink="https://nimbusbook.vercel.app"
             />
           </Col>
