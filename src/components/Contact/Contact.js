@@ -1,39 +1,70 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./form.css"
 
 const Contact = () => {
+
+    const [message, setMessage] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+
+    const handleChange = (e) => {
+        let name = e.target.name;
+        let value = e.target.value;
+        setMessage({
+            ...message,
+            [name]: value,
+        });
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await fetch("https://kmportfoliobackend.vercel.app/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(message),
+            });
+        } catch (error) {
+            console.log("Failed to send message!!");
+        }
+    }
+
     return (
         <>
-            <div class="fcf-body">
+            <div className="fcf-body">
 
                 <div id="fcf-form">
-                    <h1 class="fcf-h3">GET IN TOUCH</h1>
+                    <h1 className="fcf-h3">GET IN TOUCH</h1>
 
-                    <form id="fcf-form-id" class="fcf-form-class">
+                    <form onSubmit={handleSubmit} id="fcf-form-id" className="fcf-form-class">
 
-                        <div class="fcf-form-group">
-                            <label for="Name" class="fcf-label">Your name</label>
-                            <div class="fcf-input-group">
-                                <input type="text" id="Name" name="Name" class="fcf-form-control" required />
+                        <div className="fcf-form-group">
+                            <label htmlFor="Name" className="fcf-label">Your name</label>
+                            <div className="fcf-input-group">
+                                <input autoComplete='off' onChange={handleChange} value={message.name} type="text" id="Name" name="name" className="fcf-form-control" required />
                             </div>
                         </div>
 
-                        <div class="fcf-form-group">
-                            <label for="Email" class="fcf-label">Your email address</label>
-                            <div class="fcf-input-group">
-                                <input type="email" id="Email" name="Email" class="fcf-form-control" required />
+                        <div className="fcf-form-group">
+                            <label htmlFor="Email" className="fcf-label">Your email address</label>
+                            <div className="fcf-input-group">
+                                <input autoComplete='off' onChange={handleChange} value={message.email} type="email" id="Email" name="email" className="fcf-form-control" required />
                             </div>
                         </div>
 
-                        <div class="fcf-form-group">
-                            <label for="Message" class="fcf-label">Your message</label>
-                            <div class="fcf-input-group">
-                                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                        <div className="fcf-form-group">
+                            <label htmlFor="Message" className="fcf-label">Your message</label>
+                            <div className="fcf-input-group">
+                                <textarea autoComplete='off' onChange={handleChange} value={message.message} id="Message" name="message" className="fcf-form-control" rows="6" maxLength="3000" required></textarea>
                             </div>
                         </div>
 
-                        <div class="fcf-form-group">
-                            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                        <div className="fcf-form-group">
+                            <button type="submit" id="fcf-button" className="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
                         </div>
                     </form>
                 </div>
