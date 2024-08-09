@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import "./form.css"
+import "./form.css";
+import { MdOutlineDownloadDone } from "react-icons/md";
 
 const Contact = () => {
 
@@ -8,6 +9,8 @@ const Contact = () => {
         email: "",
         message: "",
     });
+
+    const [send, setSend] = useState("Send message");
 
     const handleChange = (e) => {
         let name = e.target.name;
@@ -28,6 +31,12 @@ const Contact = () => {
                 },
                 body: JSON.stringify(message),
             });
+            setMessage({
+                name: "",
+                email: "",
+                message: "",
+            });
+            setSend(<MdOutlineDownloadDone />);
         } catch (error) {
             console.log("Failed to send message!!");
         }
@@ -64,7 +73,7 @@ const Contact = () => {
                         </div>
 
                         <div className="fcf-form-group">
-                            <button type="submit" id="fcf-button" className="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                            <button type="submit" id="fcf-button" className="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">{send}</button>
                         </div>
                     </form>
                 </div>
