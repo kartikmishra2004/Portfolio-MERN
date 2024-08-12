@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
 import "./form.css";
 import { MdOutlineDownloadDone } from "react-icons/md";
+import loading from "../../Assets/loading.gif";
 
 const Contact = () => {
+
+    const [isLoading, setIsLoading] = useState(false);
 
     const [message, setMessage] = useState({
         name: "",
@@ -23,6 +26,7 @@ const Contact = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true);
         try {
             const response = await fetch("https://kmportfoliobackend.vercel.app/contact", {
                 method: "POST",
@@ -36,6 +40,7 @@ const Contact = () => {
                 email: "",
                 message: "",
             });
+            setIsLoading(false);
             setSend(<MdOutlineDownloadDone />);
         } catch (error) {
             console.log("Failed to send message!!");
@@ -73,7 +78,7 @@ const Contact = () => {
                         </div>
 
                         <div className="fcf-form-group">
-                            <button type="submit" id="fcf-button" className="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">{send}</button>
+                            <button type="submit" id="fcf-button" className="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">{isLoading ? (<img src={loading} className='w-[32px] brightness-200'></img>) : send}</button>
                         </div>
                     </form>
                 </div>
