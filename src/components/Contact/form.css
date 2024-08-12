@@ -11,6 +11,11 @@
     margin-top: 4rem;
 }
 
+.loader {
+    filter: brightness(2);
+    width: 32px;
+}
+
 .fcf-body {
     margin-top: 8rem;
     margin-bottom: 8rem;

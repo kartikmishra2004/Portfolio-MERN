@@ -78,7 +78,7 @@ const Contact = () => {
                         </div>
 
                         <div className="fcf-form-group">
-                            <button type="submit" id="fcf-button" className="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">{isLoading ? (<img src={loading} className='w-[32px] brightness-200'></img>) : send}</button>
+                            <button type="submit" id="fcf-button" className="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">{isLoading ? (<img src={loading} className='loader'></img>) : send}</button>
                         </div>
                     </form>
                 </div>
