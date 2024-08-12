@@ -11,10 +11,6 @@
     margin-top: 4rem;
 }
 
-.loader {
-    filter: brightness(2);
-    width: 32px;
-}
 
 .fcf-body {
     margin-top: 8rem;
@@ -181,4 +177,10 @@ label.fcf-label {
 
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
+}
+
+
+.loader-img{
+    filter: brightness(2);
+    width: 32px;
 }
