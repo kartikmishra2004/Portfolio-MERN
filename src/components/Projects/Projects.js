@@ -6,7 +6,7 @@ import TxtOptimizer from "../../Assets/Projects/TxtOptimizer.png";
 import PlatePages from "../../Assets/Projects/PlatePages.png";
 import NimbusBook from "../../Assets/Projects/NimbusBook.png";
 import FXRateMaster from "../../Assets/Projects/FXRateMaster.png";
-import VerbeGenie from "../../Assets/Projects/VerbeGenie.png";
+import VerbiGenie from "../../Assets/Projects/VerbiGenie.png";
 
 function Projects() {
   return (
@@ -65,7 +65,7 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={TxtOptimizerVerbeGenie}
+              imgPath={VerbiGenie}
               isBlog={false}
               title="VerbiGenie"
               description="VerbiGenie is a smart chatbot built using Google Gemini, designed to generate human-like responses in real-time. It excels in understanding context and providing engaging, natural conversations, making it a versatile tool for various applications."
