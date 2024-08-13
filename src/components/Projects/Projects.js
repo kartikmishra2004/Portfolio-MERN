@@ -69,7 +69,7 @@ function Projects() {
               isBlog={false}
               title="VerbiGenie"
               description="VerbiGenie is a smart chatbot built using Google Gemini, designed to generate human-like responses in real-time. It excels in understanding context and providing engaging, natural conversations, making it a versatile tool for various applications."
-              ghLink="https://github.com/kartikmishra2004/VerbiGenie-Cha"
+              ghLink="https://github.com/kartikmishra2004/VerbiGenie-ChatBot"
               demoLink="https://verbi-genie.vercel.app/"
             />
           </Col>
