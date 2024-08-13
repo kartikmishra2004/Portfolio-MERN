@@ -6,6 +6,7 @@ import TxtOptimizer from "../../Assets/Projects/TxtOptimizer.png";
 import PlatePages from "../../Assets/Projects/PlatePages.png";
 import NimbusBook from "../../Assets/Projects/NimbusBook.png";
 import FXRateMaster from "../../Assets/Projects/FXRateMaster.png";
+import VerbeGenie from "../../Assets/Projects/VerbeGenie.png";
 
 function Projects() {
   return (
@@ -60,6 +61,16 @@ function Projects() {
               description="TxtOptimizer is a React-based web application designed to help users optimize text for improved readability and effectiveness. TxtOptimizer allows users to manipulate their text as they wish, including converting to uppercase or lowercase, removing extra spaces, and providing a text summary with word count, character count, and average reading time. "
               ghLink="https://github.com/kartikmishra2004/TxtOptimizer"
               demoLink="https://txtoptimizer.netlify.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TxtOptimizerVerbeGenie}
+              isBlog={false}
+              title="VerbiGenie"
+              description="VerbiGenie is a smart chatbot built using Google Gemini, designed to generate human-like responses in real-time. It excels in understanding context and providing engaging, natural conversations, making it a versatile tool for various applications."
+              ghLink="https://github.com/kartikmishra2004/VerbiGenie-Cha"
+              demoLink="https://verbi-genie.vercel.app/"
             />
           </Col>
         </Row>
