@@ -480,6 +480,12 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
+@media (max-width: 767px) {
+  .project-section {
+    padding-top: 100px !important;
+  }
+}
+
 .project-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
