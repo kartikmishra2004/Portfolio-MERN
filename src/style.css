@@ -582,6 +582,12 @@ button:focus {
   color: white !important;
 }
 
+@media (max-width: 767px) {
+  .about-section {
+    padding-top: 74px !important;
+  }
+}
+
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
