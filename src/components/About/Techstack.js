@@ -10,6 +10,7 @@ import {
 } from "react-icons/di";
 import {
   SiExpress,
+  SiSocketdotio,
 } from "react-icons/si";
 import { TbBrandTailwind } from "react-icons/tb";
 import {
@@ -49,6 +50,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} title="GitHub" className="tech-icons">
         <VscGithub />
+      </Col>
+      <Col xs={4} md={2} title="Socket.IO" className="tech-icons">
+        <SiSocketdotio />
       </Col>
     </Row>
   );
