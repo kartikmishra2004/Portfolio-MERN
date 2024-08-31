@@ -1,6 +1,6 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { FaWindows } from "react-icons/fa"
+import { FaWindows, FaFigma } from "react-icons/fa"
 import { TbBrandVite  } from "react-icons/tb"
 import {
   SiVisualstudiocode,
@@ -25,6 +25,9 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} title="Vercel" className="tech-icons">
         <SiVercel />
+      </Col>
+      <Col xs={4} md={2} title="Figma" className="tech-icons">
+        <FaFigma />
       </Col>
     </Row>
   );
