@@ -6,6 +6,7 @@ import TxtOptimizer from "../../Assets/Projects/TxtOptimizer.png";
 import PlatePages from "../../Assets/Projects/PlatePages.png";
 import NimbusBook from "../../Assets/Projects/NimbusBook.png";
 import Zylonet from "../../Assets/Projects/Zylonet.png";
+import BuyMeASoda from "../../Assets/Projects/BuyMeASoda.png";
 import FXRateMaster from "../../Assets/Projects/FXRateMaster.png";
 import VerbiGenie from "../../Assets/Projects/VerbiGenie.png";
 
@@ -21,6 +22,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={BuyMeASoda}
+              isBlog={false}
+              title="Buy Me a Soda"
+              description="Buy Me a Soda is a Next.js crowdfunding platform where users log in via GitHub, create personalized pages to showcase business ideas, and raise funds. It features a customizable dashboard, secure authentication with NextAuth, and integrates MongoDB and Cloudinary for data and media management."
+              ghLink="https://github.com/kartikmishra2004/Buy-Me-a-Soda"
+              demoLink="https://buymeasoda.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Zylonet}
