@@ -11,6 +11,7 @@ import {
 import {
   SiExpress,
   SiSocketdotio,
+  SiNextdotjs,
 } from "react-icons/si";
 import { TbBrandTailwind } from "react-icons/tb";
 import {
@@ -21,6 +22,12 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} title="Next.js" className="tech-icons">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} title="React.js" className="tech-icons">
+        <DiReact />
+      </Col>
       <Col xs={4} md={2} title="HTML 5" className="tech-icons">
         <FaHtml5 />
       </Col>
@@ -32,9 +39,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} title="Tailwind CSS" className="tech-icons">
         <TbBrandTailwind />
-      </Col>
-      <Col xs={4} md={2} title="React.js" className="tech-icons">
-        <DiReact />
       </Col>
       <Col xs={4} md={2} title="Node.js" className="tech-icons">
         <DiNodejs />
