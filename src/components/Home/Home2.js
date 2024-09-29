@@ -25,7 +25,7 @@ function Home2() {
               <br />
               <br />I'm a skilled web developer specializing in full-stack development with expertise in
               <i>
-                <b className="purple"> HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. </b>
+                <b className="purple"> HTML, CSS, JavaScript, React.js, Next.js, Node.js, Express.js, and MongoDB. </b>
               </i>
               <br />
               <br />

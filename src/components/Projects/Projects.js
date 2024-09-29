@@ -5,6 +5,7 @@ import Particle from "../Particle";
 import TxtOptimizer from "../../Assets/Projects/TxtOptimizer.png";
 import PlatePages from "../../Assets/Projects/PlatePages.png";
 import NimbusBook from "../../Assets/Projects/NimbusBook.png";
+import Zylonet from "../../Assets/Projects/Zylonet.png";
 import FXRateMaster from "../../Assets/Projects/FXRateMaster.png";
 import VerbiGenie from "../../Assets/Projects/VerbiGenie.png";
 
@@ -20,6 +21,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Zylonet}
+              isBlog={false}
+              title="Zylonet"
+              description="ZyloNet is a social media platform built with the MERN stack, allowing users to register, create profiles, post content, and engage in real-time chat. It features user authentication, post exploration, follow/unfollow functionality, and a real-time messaging system using Socket.IO."
+              ghLink="https://github.com/kartikmishra2004/Zylonet"
+              demoLink="https://zylonet.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={NimbusBook}
