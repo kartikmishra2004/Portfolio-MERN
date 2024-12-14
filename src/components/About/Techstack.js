@@ -22,9 +22,6 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} title="Next.js" className="tech-icons">
-        <SiNextdotjs />
-      </Col>
       <Col xs={4} md={2} title="React.js" className="tech-icons">
         <DiReact />
       </Col>
