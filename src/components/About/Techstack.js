@@ -24,7 +24,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} title="Next.js" className="tech-icons">
+      <Col xs={4} md={2} title="Firebase" className="tech-icons">
         <IoLogoFirebase />
       </Col>
       <Col xs={4} md={2} title="React.js" className="tech-icons">
