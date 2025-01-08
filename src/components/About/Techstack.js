@@ -19,9 +19,14 @@ import {
   FaCss3Alt,
 } from "react-icons/fa"
 
+import { IoLogoFirebase } from "react-icons/io5";
+
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} title="Next.js" className="tech-icons">
+      <IoLogoFirebase />
+      </Col>
       <Col xs={4} md={2} title="Next.js" className="tech-icons">
         <SiNextdotjs />
       </Col>
