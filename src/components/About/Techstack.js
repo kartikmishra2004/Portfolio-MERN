@@ -25,10 +25,7 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} title="Next.js" className="tech-icons">
-      <IoLogoFirebase />
-      </Col>
-      <Col xs={4} md={2} title="Next.js" className="tech-icons">
-        <SiNextdotjs />
+        <IoLogoFirebase />
       </Col>
       <Col xs={4} md={2} title="React.js" className="tech-icons">
         <DiReact />
