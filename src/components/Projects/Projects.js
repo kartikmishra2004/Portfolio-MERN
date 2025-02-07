@@ -9,6 +9,7 @@ import Zylonet from "../../Assets/Projects/Zylonet.png";
 import BuyMeASoda from "../../Assets/Projects/BuyMeASoda.png";
 import FXRateMaster from "../../Assets/Projects/FXRateMaster.png";
 import VerbiGenie from "../../Assets/Projects/VerbiGenie.png";
+import Togetherable from '../../Assets/Projects/Togetherable.png'
 
 function Projects() {
   return (
@@ -22,6 +23,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Togetherable}
+              isBlog={false}
+              title="Togetherable"
+              description="Togetherable is a peer support community platform where people with different disabilities can share their experiences, offer support, and form communities. Features could include message boards, video chat rooms, and group discussions that are fully accessible to people with visual or hearing impairments."
+              ghLink="https://github.com/kartikmishra2004/Togetherable"
+              demoLink="https://togetherable.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={BuyMeASoda}
