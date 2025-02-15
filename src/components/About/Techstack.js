@@ -11,7 +11,6 @@ import {
   SiExpress,
   SiSocketdotio,
   SiNextdotjs,
-  SiShadcnui,
   SiTypescript,
 } from "react-icons/si";
 import { TbBrandTailwind } from "react-icons/tb";
@@ -20,6 +19,7 @@ import {
   FaCss3Alt,
 } from "react-icons/fa"
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
+import { SiShadcnui } from "react-icons/si";
 
 function Techstack() {
   return (
