@@ -2,7 +2,6 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { VscGithub } from "react-icons/vsc"
 import {
-  DiJavascript1,
   DiReact,
   DiNodejs,
   DiMongodb,
@@ -12,18 +11,28 @@ import {
   SiExpress,
   SiSocketdotio,
   SiNextdotjs,
+  SiShadcnui,
+  SiTypescript,
 } from "react-icons/si";
 import { TbBrandTailwind } from "react-icons/tb";
 import {
   FaHtml5,
   FaCss3Alt,
 } from "react-icons/fa"
-
-import { IoLogoFirebase } from "react-icons/io5";
+import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} title="Next.js" className="tech-icons">
+        <SiNextdotjs />
+      </Col>
+      <Col xs={4} md={2} title="TypeScript" className="tech-icons">
+        <SiTypescript />
+      </Col>
+      <Col xs={4} md={2} title="Shadcn" className="tech-icons">
+        <SiShadcnui />
+      </Col>
       <Col xs={4} md={2} title="Firebase" className="tech-icons">
         <IoLogoFirebase />
       </Col>
@@ -37,7 +46,7 @@ function Techstack() {
         <FaCss3Alt />
       </Col>
       <Col xs={4} md={2} title="JavaScript" className="tech-icons">
-        <DiJavascript1 />
+        <IoLogoJavascript />
       </Col>
       <Col xs={4} md={2} title="Tailwind CSS" className="tech-icons">
         <TbBrandTailwind />
