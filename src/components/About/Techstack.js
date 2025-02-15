@@ -19,7 +19,6 @@ import {
   FaCss3Alt,
 } from "react-icons/fa"
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
-import { SiShadcnui } from "react-icons/si";
 
 function Techstack() {
   return (
@@ -29,9 +28,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} title="TypeScript" className="tech-icons">
         <SiTypescript />
-      </Col>
-      <Col xs={4} md={2} title="Shadcn" className="tech-icons">
-        <SiShadcnui />
       </Col>
       <Col xs={4} md={2} title="Firebase" className="tech-icons">
         <IoLogoFirebase />
