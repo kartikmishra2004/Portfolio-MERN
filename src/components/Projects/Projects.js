@@ -10,7 +10,7 @@ import BuyMeASoda from "../../Assets/Projects/BuyMeASoda.png";
 import FXRateMaster from "../../Assets/Projects/FXRateMaster.png";
 import VerbiGenie from "../../Assets/Projects/VerbiGenie.png";
 import Togetherable from '../../Assets/Projects/Togetherable.png'
-import TurboRequest from "../../Assets/Projects/TurboReques.png";
+import TurboRequest from "../../Assets/Projects/TurboRequest.png";
 
 function Projects() {
   return (
