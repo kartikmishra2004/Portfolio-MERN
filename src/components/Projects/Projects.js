@@ -10,6 +10,7 @@ import BuyMeASoda from "../../Assets/Projects/BuyMeASoda.png";
 import FXRateMaster from "../../Assets/Projects/FXRateMaster.png";
 import VerbiGenie from "../../Assets/Projects/VerbiGenie.png";
 import Togetherable from '../../Assets/Projects/Togetherable.png'
+import TurboRequest from "../../Assets/Projects/TurboReques.png";
 
 function Projects() {
   return (
@@ -23,6 +24,16 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TurboRequest}
+              isBlog={false}
+              title="Turbo Request"
+              description="Turbo Request is a fast and SEO-optimized web-based API testing platform built with Next.js, TypeScript, MongoDB, and ShadCN. It allows developers to create and manage collections of GET, POST, PUT, and DELETE requests with custom headers and body. Designed with performance and clean UI in mind, it offers a smooth, Postman-like experience directly in the browser."
+              ghLink="https://github.com/kartikmishra2004/turborequest"
+              demoLink="https://turborequest.vercel.app/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={Togetherable}
@@ -82,7 +93,7 @@ function Projects() {
               title="Plate Pages"
               description="Plate Pages is a food recipes application built with React.js. It enables users to discover random recipes and search for their favorites. The app features a clean, responsive UI for an engaging user experience across all devices. Explore the code to see how React components and API integration work together to deliver a dynamic recipe finder."
               ghLink="https://github.com/kartikmishra2004/Plate-Pages"
-              demoLink="https://platepages.netlify.app/"              
+              demoLink="https://platepages.netlify.app/"
             />
           </Col>
 
